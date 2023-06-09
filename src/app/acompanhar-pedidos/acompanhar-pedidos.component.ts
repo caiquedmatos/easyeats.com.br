@@ -31,7 +31,7 @@ export class AcompanharPedidosComponent {
     console.log(this.email);
 
     $.post(
-      'http://localhost:3000/cozinhaUser',
+      'https://easyeats-node.onrender.com/cozinhaUser',
       {
         "email": this.email
       },

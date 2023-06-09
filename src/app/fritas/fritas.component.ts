@@ -34,7 +34,7 @@ export class FritasComponent {
     let preco = "R$ 19,99";
 
     $.post(
-      'http://localhost:3000/adicionaItem',
+      'https://easyeats-node.onrender.com/adicionaItem',
       {
         "item": item,
         "preco": preco,

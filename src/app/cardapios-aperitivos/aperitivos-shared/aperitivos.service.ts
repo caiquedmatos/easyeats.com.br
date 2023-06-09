@@ -8,7 +8,7 @@ import { AperitivosModel } from './aperitivos.model';
 })
 export class AperitivosService {
 
-  private API = "http://localhost:3000/";
+  private API = "https://easyeats-node.onrender.com/";
 
   constructor( private httpClient:HttpClient ) { }
 

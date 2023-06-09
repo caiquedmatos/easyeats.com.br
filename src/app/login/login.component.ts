@@ -20,7 +20,7 @@ export class LoginComponent {
   loginUser(email: string, senha: string) {
     console.log('Passei no primeiro ponto do login');
     $.get(
-      'http://localhost:3000/login',
+      'https://easyeats-node.onrender.com/login',
       {
         "email": email,
         "senha": senha,
@@ -43,7 +43,7 @@ export class LoginComponent {
     console.log('Fui acionado');
 
     $.post(
-      'http://localhost:3000/dados_usuario',
+      'https://easyeats-node.onrender.com/dados_usuario',
       {
         email: email,
       },

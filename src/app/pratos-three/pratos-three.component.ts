@@ -35,7 +35,7 @@ export class PratosThreeComponent {
     let preco = "R$ 32,23";
 
     $.post(
-      'http://localhost:3000/adicionaItem',
+      'https://easyeats-node.onrender.com/adicionaItem',
       {
         "item": item,
         "preco": preco,

@@ -35,7 +35,7 @@ export class BurguerOneComponent {
     let preco = "R$ 81,67";
 
     $.post(
-      'http://localhost:3000/adicionaItem',
+      'https://easyeats-node.onrender.com/adicionaItem',
       {
         "item": item,
         "preco": preco,

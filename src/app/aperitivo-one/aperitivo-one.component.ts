@@ -34,7 +34,7 @@ export class AperitivoOneComponent {
     let preco = "R$ 8,99";
 
     $.post(
-      'http://localhost:3000/adicionaItem',
+      'https://easyeats-node.onrender.com/adicionaItem',
       {
         "item": item,
         "preco": preco,

@@ -34,7 +34,7 @@ export class BebidaFourComponent {
     let preco = "R$ 71,90";
 
     $.post(
-      'http://localhost:3000/adicionaItem',
+      'https://easyeats-node.onrender.com/adicionaItem',
       {
         "item": item,
         "preco": preco,

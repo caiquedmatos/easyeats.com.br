@@ -35,7 +35,7 @@ export class JapaOneComponent {
     let preco = "R$ 31,13";
 
     $.post(
-      'http://localhost:3000/adicionaItem',
+      'https://easyeats-node.onrender.com/adicionaItem',
       {
         "item": item,
         "preco": preco,

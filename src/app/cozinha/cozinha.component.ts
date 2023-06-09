@@ -31,7 +31,7 @@ export class CozinhaComponent {
     console.log(this.email);
 
     $.get(
-      'http://localhost:3000/cozinha',
+      'https://easyeats-node.onrender.com/cozinha',
       {
       },
       (res) => {
@@ -47,7 +47,7 @@ export class CozinhaComponent {
     console.log("Função acionada");
     console.log(itemId);
 
-    $.post('http://localhost:3000/deleteItemCozinha', {
+    $.post('https://easyeats-node.onrender.com/deleteItemCozinha', {
       "itemId":itemId
     }, (res) => {
       console.log(res);

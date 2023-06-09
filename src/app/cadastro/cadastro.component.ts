@@ -32,7 +32,7 @@ export class CadastroComponent {
     }
     else {
       console.log("Passei no segundo ponto do cadastro");
-      $.post("http://localhost:3000/cadastroUser", {
+      $.post("https://easyeats-node.onrender.com/cadastroUser", {
         "nome": nome,
         "senha": senha,
         "email": email,

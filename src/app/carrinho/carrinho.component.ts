@@ -31,7 +31,7 @@ export class CarrinhoComponent {
     console.log(this.email);
 
     $.post(
-      'http://localhost:3000/carrinhoUser',
+      'https://easyeats-node.onrender.com/carrinhoUser',
       {
         "email": this.email
       },
@@ -50,7 +50,7 @@ export class CarrinhoComponent {
       console.log("Esse é o objeto do item " + i);
 
       $.post(
-        'http://localhost:3000/cadastroCozinha',
+        'https://easyeats-node.onrender.com/cadastroCozinha',
         {
           "item": this.itens[i].item,
           "preco": this.itens[i].preco,
@@ -63,7 +63,7 @@ export class CarrinhoComponent {
         }
       );
 
-      $.post('http://localhost:3000/deleteItem', {
+      $.post('https://easyeats-node.onrender.com/deleteItem', {
         "itemId": this.itens[i].itemId
       }, (res) => {
         console.log(res);
@@ -78,7 +78,7 @@ export class CarrinhoComponent {
     console.log("Função acionada");
     console.log(itemId);
 
-    $.post('http://localhost:3000/deleteItem', {
+    $.post('https://easyeats-node.onrender.com/deleteItem', {
       "itemId": itemId
     }, (res) => {
       console.log(res);
@@ -119,7 +119,7 @@ export class CarrinhoComponent {
 //   }
 
 //   Itens() {
-//     $.get('http://localhost:3000/carrinhoUser', { email:this.email }, (res) => {
+//     $.get('https://easyeats-node.onrender.com/carrinhoUser', { email:this.email }, (res) => {
 //       let itens = res;
 //       this.exibirItens(itens);
 //     });
@@ -129,7 +129,7 @@ export class CarrinhoComponent {
 //     console.log("Função acionada");
 //     console.log(itemId);
 
-//     $.post('http://localhost:3000/deleteItem', {
+//     $.post('https://easyeats-node.onrender.com/deleteItem', {
 //       "itemId":itemId
 //     }, (res) => {
 //       console.log(res);

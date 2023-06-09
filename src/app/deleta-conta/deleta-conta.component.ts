@@ -31,7 +31,7 @@ export class DeletaContaComponent {
     if(senhaTest == this.senha)
     {
       console.log("Função acionada");
-      $.post('http://localhost:3000/delete_usuario', {id:this.id}, (res) => {
+      $.post('https://easyeats-node.onrender.com/delete_usuario', {id:this.id}, (res) => {
       console.log(res);
       alert("Você acaba de deletar seu Usuário PARA SEMPRE.");
       window.location.href = '/';

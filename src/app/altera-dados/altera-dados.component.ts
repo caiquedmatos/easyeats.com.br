@@ -28,7 +28,7 @@ export class AlteraDadosComponent {
     console.log('Passei no primeiro ponto da altereção');
 
     $.post(
-      'http://localhost:3000/dados_usuario', { email: localStorage.getItem("email") },
+      'https://easyeats-node.onrender.com/dados_usuario', { email: localStorage.getItem("email") },
       (res) => {
         console.log('Passei no check da senha.');
         console.log(res);
@@ -51,7 +51,7 @@ export class AlteraDadosComponent {
           } else {
             console.log('Passei no segundo ponto da alteração');
             $.post(
-              'http://localhost:3000/alterar_dados_usuario',
+              'https://easyeats-node.onrender.com/alterar_dados_usuario',
               {
                 nome: nome,
                 senha: senha,
