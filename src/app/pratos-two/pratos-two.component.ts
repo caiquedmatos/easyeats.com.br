@@ -17,13 +17,13 @@ export class PratosTwoComponent {
   }
 
   
-   nome = localStorage.getItem('nome');
+  nome = localStorage.getItem('nome');
   email = localStorage.getItem('email');
   telefone = localStorage.getItem('telefone');
   senha = localStorage.getItem('senha');
   id = localStorage.getItem('id');
 
- titulo: string; // Declaração da propriedade 'titulo' sem inicialização
+  titulo: string; // Declaração da propriedade 'titulo' sem inicialização
   descricao: string; // Declaração da propriedade 'descrição' sem inicialização
   img: string; // Declaração da propriedade 'img' sem inicialização
   preco: string; // Declaração da propriedade 'preço' sem inicialização

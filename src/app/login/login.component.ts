@@ -9,13 +9,22 @@ import * as $ from 'jquery';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router) { }
+
+  rota = localStorage.getItem('rota');
+
 
   nome: string = '';
   email: string = '';
   telefone: string = '';
   senha: string = '';
   id: string = '';
+
+
+  ngOnInit() {
+    this.rota = localStorage.getItem('rota');
+    console.log(this.rota);
+  }
 
   loginUser(email: string, senha: string) {
     console.log('Passei no primeiro ponto do login');
@@ -30,11 +39,11 @@ export class LoginComponent {
         console.log('Passei no segundo ponto do login');
         this.Dados(email);
         if (res[0].senha === senha) {
-        this.router.navigate(['/favoritos']);
+          this.router.navigate(['/favoritos']);
         } else if (res === 'Usuário não encontrado.') {
           alert('Usuário não encontrado.');
         } else {
-          alert('Senha incorreta.');  
+          alert('Senha incorreta.');
         }
       }
     );
