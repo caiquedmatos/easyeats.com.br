@@ -38,6 +38,19 @@
     right: 3%;
     top: 12%;
     filter: drop-shadow(0px 2px 9px black);
+    animation: vira 3s ease infinite;
+}
+
+@keyframes vira {
+    0% {
+        transform: scale(0.8);
+    }    
+    50% {
+        transform: scale(1.4);
+    }    
+    100% {
+        transform: scale(0.8);
+    }    
 }
 
 .box-tipo-cardapio a {

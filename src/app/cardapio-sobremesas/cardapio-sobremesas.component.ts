@@ -9,7 +9,7 @@ export class CardapioSobremesasComponent {
   burguers = [
     {
       imagem: '../../../assets/imagens/sobremesas/1.1.png',
-      nome: 'Pacumê de bombom Eats',
+      nome: 'Pacumê Eats',
       descricao: 'Bombonzine, leite, leite de creme e manteiga',
       preco: 'R$ 60,99',
       link: 'sobremesaOne'

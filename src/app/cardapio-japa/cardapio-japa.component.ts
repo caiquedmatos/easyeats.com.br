@@ -30,7 +30,7 @@ export class CardapioJapaComponent {
     },
     {
       imagem: '../../../assets/imagens/japa/4.1.png',
-      nome: 'Granulado de Salmão Eats',
+      nome: 'Granulado Eats',
       descricao: 'Tem arroz, tem gergilim, tem uma lasquinha salmão, tem pepino e tem alho poró',
       preco: 'R$ 12,33',
       link: '../japaFour'
